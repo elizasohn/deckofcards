@@ -22,9 +22,9 @@ $(document).ready(function(){
   $("form#inputForm").submit(function(event){
     event.preventDefault();
 
-    var result = deckFunction(suit, rank);
-    result.forEach(function(thisResult){
-      $("ul").append("<li>" + thisResult + "</li>")
+    var deckOfCards = deckFunction(suit, rank);
+    deckOfCards.forEach(function(card){
+      $("ul").append("<li>" + card + "</li>")
 
 
     })
